@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Virtual Keyboard</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="style.css">
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal__content">
+        <span class="fimanager x_shift flaticon-030-shift"></span>
+      </div>
+    </div>
+    <textarea placeholder="Text" class="output-window"></textarea>
+    <div class="logs">
+      <input disabled class="event count_signs" type="" name="">
+      <input disabled class="event event_code" type="" name="">
+      <input disabled class="event event_which" type="" name="">
+      <input disabled class="event event_location" type="" name="">
+      <input disabled class="event event_key" type="" name="">
+    </div>
+    <div class="speaking">
+      <span class="speech-to-text"></span>
+    </div>
+    <main class="keyboard">
+      <div class="row row__shirt">
+        <div class="keyboard__navigation keys__navigation">
+          <button class="keyboard__navigation_button x close">
+          <img class="navigation_button" src="icons/close.png">
+          </button>
+          <button class="keyboard__navigation_button minimize" style="">
+          <img class="navigation_button" src="icons/minimize.png">
+          </button>
+          <button class="keyboard__navigation_button maximize">
+          <img class="navigation_button" src="icons/maximize.png">
+          </button>
+        </div>
+        <button disabled class="ke key__shirt">F1</button>
+        <button disabled class="ke key__shirt">F2</button>
+        <button disabled class="ke key__shirt">F3</button>
+        <button disabled class="ke key__shirt">F4</button>
+        <button disabled class="ke key__shirt">F5</button>
+        <button disabled class="ke key__shirt">F6</button>
+        <button disabled class="ke key__shirt">F7</button>
+        <button disabled class="ke key__shirt">F8</button>
+        <button disabled class="ke key__shirt">F9</button>
+        <button disabled class="ke key__shirt">F10</button>
+        <button disabled class="ke key__shirt">F11</button>
+        <button class="ke key__shirt volume fa fas fa-volume-up"></button>
+      </div>
+      <div class="row row__main">
+        <button class="key">§</button>
+        <button class="key">1</button>
+        <button class="key">2</button>
+        <button class="key">3</button>
+        <button class="key">4</button>
+        <button class="key">5</button>
+        <button class="key">6</button>
+        <button class="key">7</button>
+        <button class="key">8</button>
+        <button class="key">9</button>
+        <button class="key">0</button>
+        <button class="key">-</button>
+        <button class="key">=</button>
+        <button class="key__wide_s x backspace fimanager flaticon-007-delete"></button>   
+      </div>
+      <div class="row row__main">
+        <button class="key key__wide_s">`</button>
+        <button id="81" class="key">q</button>
+        <button class="key">w</button>
+        <button class="key">e</button>
+        <button class="key">r</button>
+        <button class="key">t</button>
+        <button class="key">y</button>
+        <button class="key">u</button>
+        <button class="key">i</button>
+        <button class="key">o</button>
+        <button class="key">p</button>
+        <button class="key">[</button>
+        <button class="key">]</button>
+        <button class="key">\</button>
+      </div>
+      <div class="row row__main">
+        <button class="caps key__wide_m x fimanager flaticon-010-upload">
+        <span></span>
+        <span class="pointer"> .</span></button>
+        <button class="key">a</button>
+        <button class="key">s</button>
+        <button class="key">d</button>
+        <button class="key">f</button>
+        <button class="key">g</button>
+        <button class="key">h</button>
+        <button class="key">j</button>
+        <button class="key">k</button>
+        <button class="key">l</button>
+        <button class="key">;</button>
+        <button class="key">'</button>
+        <button class="key__wide_m enter x fimanager flaticon-014-enter"></button>
+      </div>
+      <div class="row row__main">
+        <button class="shift key__wide_l x fimanager flaticon-030-shift"></button>
+        <button class="key">z</button>
+        <button class="key">x</button>
+        <button class="key">c</button>
+        <button class="key">v</button>
+        <button class="key">b</button>
+        <button class="key">n</button>
+        <button class="key">m</button>
+        <button class="key">,</button>
+        <button class="key">.</button>
+        <button class="key">/</button>
+        <button class="shift key__wide_l x fimanager flaticon-030-shift"></button>
+      </div>
+      <div class="row row__main">
+        <button class="ke lang">EN</button>
+        <button class="ke x">ctrl</button>
+        <button class="ke x fimanager flaticon-025-option"></button>
+        <button class="ke x y fa fas fa-microphone"></button>
+        <button class="key key__wide_xl"> </button>
+        <button class="ke x y fimanager flaticon-011-command"></button>
+        <button class="ke x y fimanager flaticon-025-option"></button>
+        <button class="ke x left">&#8592;</button>
+        <div class="arrows">
+          <button class="ke x key__shirt arrow">&#8593;</button>
+          <button class="ke x key__shirt arrow">&#8595;</button>
+        </div>
+        <button class="ke x right">&#8594;</button>  
+      </div>
+    </main>
+    <button class="springboard__icon springboard__icon-hidden"><img src="icons/keyboard-app-store-removebg-preview.png"></button>
+    <audio class="audio_standart_en audio_standart_ru">
+     <source src="audio/keypressStandard.mp3" type="audio/ogg; codecs=vorbis"/>
+     <source src="audio/keypressStandard.mp3" type="audio/mpeg"/>
+    </audio>
+    <audio class="audio_return audio_return_ru">
+     <source src="audio/keypressReturn.mp3" type="audio/ogg; codecs=vorbis"/>
+     <source src="audio/keypressReturn.mp3" type="audio/mpeg"/>
+    </audio>
+    <audio class="audio_delete">
+     <source src="audio/keypressDelete.mp3" type="audio/ogg; codecs=vorbis"/>
+     <source src="audio/keypressDelete.mp3" type="audio/mpeg"/>
+    </audio>
+    <audio class="audio_spacebar">
+      <source src="audio/keypressSpacebar.mp3" type="audio/ogg; codecs=vorbis"/>
+     <source src="audio/keypressSpacebar.mp3" type="audio/mpeg"/>
+    </audio>
+    <script src="main.js"></script>
+  </body>
+</html>
