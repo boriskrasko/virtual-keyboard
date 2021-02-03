@@ -1,6 +1,6 @@
 # Virtual-keyboard
 
-[**Virtual-keyboard**](https://boriskrasko.github.io/virtual-keyboard) - masOS design
+[**Virtual-keyboard**](https://boriskrasko.github.io/virtual-keyboard) - macOS design
 
 ## Application Structure:
 1. Textarea
